@@ -5,7 +5,7 @@ import "fmt"
 func soma(a int, b int) int {
 	return a + b
 }
-func divisao(a int, int b) int {
+func divisao(a int, b int) int {
 	if b == 0 {
 		panic("O denominador não pode ser 0")
 
