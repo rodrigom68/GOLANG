@@ -24,12 +24,11 @@ func main() {
 	// + - * / %
 	// ++ --
 	// += -= *= /= %=
-	// == != > < >= <=
+	// == != > < >= <= relacionais
 	// && || !
 	fmt.Println(soma(3, 4))
 	fmt.Println(subtracao(3, 4))
 	// fmt.Println(divisao(3, 0)) // panic: O denominador não pode ser 0
 	fmt.Println(divisao(3, 4))
 	fmt.Println(multiplicacao(3, 4))
-
 }
