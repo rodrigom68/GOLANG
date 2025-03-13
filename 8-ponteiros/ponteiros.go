@@ -13,4 +13,12 @@ func main() {
 
 	// Ponteiro é uma referência de memória
 
+	var variavel3 int = 100
+	var ponteiro *int
+
+	variavel3 = 150
+	ponteiro = &variavel3
+	fmt.Println(variavel3, ponteiro)
+	fmt.Println(variavel3, *ponteiro) // desreferenciando o ponteiro
+
 }
