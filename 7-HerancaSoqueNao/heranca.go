@@ -23,4 +23,8 @@ func main() {
 
 	e1 := estudante{p1, "Engenharia", "USP"}
 	fmt.Println(e1)
+	fmt.Println(e1.nome)
+	fmt.Println(e1.faculdade)
+	fmt.Println(e1.idade)
+	fmt.Println(e1.altura)
 }
