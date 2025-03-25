@@ -26,4 +26,6 @@ func diaDaSemana(numero int) string {
 func main() {
 	fmt.Println("Estrutura Switch")
 
-
+	dia := diaDaSemana(3)
+	fmt.Println(dia)
+}
