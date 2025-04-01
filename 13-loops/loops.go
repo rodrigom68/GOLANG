@@ -43,6 +43,14 @@ func main() {
 
 	for j := 0; j < 10; j += 2 {
 		fmt.Println("incrementando j =", j)
+		time.
+			Sleep(time.Second)
+	}
+
+	nomes := [3]string{"João", "Maria", "José"}
+
+	for indice, nomes := range nomes {
+		fmt.Println("índice:", indice, "nome:", nomes)
 		time.Sleep(time.Second)
 	}
 }
