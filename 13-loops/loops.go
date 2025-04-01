@@ -40,4 +40,9 @@ func main() {
 
 	}
 	fmt.Println("i =", i)
+
+	for j := 0; j < 10; j += 2 {
+		fmt.Println("incrementando j =", j)
+		time.Sleep(time.Second)
+	}
 }
