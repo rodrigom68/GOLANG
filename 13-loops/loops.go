@@ -32,20 +32,20 @@ func main() {
 	// 	}
 	// 	fmt.Println(i)
 	// }
-	i := 0
-	for i < 10 {
-		i++
-		fmt.Println("incrementando i =", i)
-		time.Sleep(time.Second)
+	// i := 0
+	// for i < 10 {
+	// 	i++
+	// 	fmt.Println("incrementando i =", i)
+	// 	time.Sleep(time.Second)
 
-	}
-	fmt.Println("i =", i)
+	// }
+	// fmt.Println("i =", i)
 
-	for j := 0; j < 10; j += 2 {
-		fmt.Println("incrementando j =", j)
-		time.
-			Sleep(time.Second)
-	}
+	// for j := 0; j < 10; j += 2 {
+	// 	fmt.Println("incrementando j =", j)
+	// 	time.
+	// 		Sleep(time.Second)
+	// }
 
 	nomes := [3]string{"João", "Maria", "José"}
 
