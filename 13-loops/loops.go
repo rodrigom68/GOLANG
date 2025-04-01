@@ -49,8 +49,13 @@ func main() {
 
 	nomes := [3]string{"João", "Maria", "José"}
 
-	for indice, nomes := range nomes {
-		fmt.Println("índice:", indice, "nome:", nomes)
+	// for indice, nomes := range nomes {
+	// 	fmt.Println("índice:", indice, "nome:", nomes)
+	// 	time.Sleep(time.Second)
+	// }
+
+	for _, nome := range nomes {
+		fmt.Println("nome:", nome)
 		time.Sleep(time.Second)
 	}
 }
