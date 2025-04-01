@@ -54,8 +54,24 @@ func main() {
 	// 	time.Sleep(time.Second)
 	// }
 
-	for _, nome := range nomes {
-		fmt.Println("nome:", nome)
+	// for _, nome := range nomes {
+	// 	fmt.Println("nome:", nome)
+	// 	time.Sleep(time.Second)
+	// }
+
+	// for indice, letra := range "Programação" {
+	// 	fmt.Println("índice:", indice, string(letra))
+	// 	time.Sleep(time.Second)
+	// }
+
+	usuario := map[string]string{
+		"nome":      "João",
+		"sobrenome": "Silva",
+		"idade":     "30",
+	}
+
+	for chave, valor := range usuario {
+		fmt.Println("chave:", chave, "valor:", valor)
 		time.Sleep(time.Second)
 	}
 }
