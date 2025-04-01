@@ -74,5 +74,4 @@ func main() {
 		fmt.Println("chave:", chave, valor)
 		time.Sleep(time.Second)
 	}
-
 }
