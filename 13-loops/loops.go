@@ -47,7 +47,7 @@ func main() {
 	// 		Sleep(time.Second)
 	// }
 
-	nomes := [3]string{"João", "Maria", "José"}
+	// nomes := [3]string{"João", "Maria", "José"}
 
 	// for indice, nomes := range nomes {
 	// 	fmt.Println("índice:", indice, "nome:", nomes)
@@ -71,7 +71,7 @@ func main() {
 	}
 
 	for chave, valor := range usuario {
-		fmt.Println("chave:", chave, "valor:", valor)
+		fmt.Println("chave:", chave, valor)
 		time.Sleep(time.Second)
 	}
 }
