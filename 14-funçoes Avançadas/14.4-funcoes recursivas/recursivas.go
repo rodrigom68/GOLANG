@@ -17,7 +17,7 @@ func main() {
 	posicao := uint(10)
 
 	for i := uint(0); i <= posicao; i++ {
-		fmt.Println("Fibonacci de", i, "é", fibonacci(i))
+		//fmt.Println("Fibonacci de", i, "é", fibonacci(i))
 
 		fmt.Println(posicao, "-", posicao, "+", posicao, "=", fibonacci(posicao)-1)
 	}
