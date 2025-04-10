@@ -13,8 +13,19 @@ func (u usuario) salvar() { // método salvar
 	fmt.Println("Salvando usuário", u.nome, "com idade", u.idade) // método salvar
 }
 
+func (u usuario) maiorDeIdade() bool { // método maiorDeIdade
+	return u.idade >= 18 // método maiorDeIdade
+
 func main() {
 	usuario1 := usuario{"Lucas", 25}
+	usuario2 := usuario{"Ana", 30}
+	usuario3 := usuario{"João", 22}
 	fmt.Println(usuario1) // imprime o usuário
 	usuario1.salvar()     // chama o método salvar do usuário 1
+	usuario2.salvar()     // chama o método salvar do usuário 2
+	usuario3.salvar()     // chama o método salvar do usuário 3
+	usuario1.maiorDeIdade() // chama o método maiorDeIdade do usuário 1
+	usuario2.maiorDeIdade() // chama o método maiorDeIdade do usuário 2	
+	usuario3.maiorDeIdade() // chama o método maiorDeIdade do usuário 3
+	fmt.Println(usuario1.maiorDeIdade()) // imprime se o usuário 1 é maior de idade
 }
