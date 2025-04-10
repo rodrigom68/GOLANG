@@ -20,6 +20,8 @@ func main() {
 	fmt.Println("Número original:", numero)
 	fmt.Println("Número invertido:", numeInvertido)
 
-	novoNumero := 20
+	novoNumero := 40
 	inverterSinalPonteiro(&novoNumero) // Passando o endereço de memória do número
+	fmt.Println("Número original:", novoNumero)
+	fmt.Println("Número invertido:", novoNumero) // O número original foi alterado
 }
