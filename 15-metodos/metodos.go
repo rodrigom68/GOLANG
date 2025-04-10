@@ -17,6 +17,11 @@ func (u usuario) maiorDeIdade() bool { // método maiorDeIdade
 	return u.idade >= 18 // método maiorDeIdade
 }
 
+func (u *usuario) fazerAniversario() { // método fazerAniversario
+	u.idade++                                                                   // método fazerAniversario
+	fmt.Println("Fazendo aniversário do usuário", u.nome, "com idade", u.idade) // método fazerAniversario
+}
+
 func main() {
 	usuario1 := usuario{"Lucas", 25}
 	usuario2 := usuario{"Ana", 30}
@@ -29,4 +34,8 @@ func main() {
 	usuario2.maiorDeIdade()              // chama o método maiorDeIdade do usuário 2
 	usuario3.maiorDeIdade()              // chama o método maiorDeIdade do usuário 3
 	fmt.Println(usuario1.maiorDeIdade()) // imprime se o usuário 1 é maior de idade
+
+	usuario1.fazerAniversario() // chama o método fazerAniversario do usuário 1
+	usuario2.fazerAniversario() // chama o método fazerAniversario do usuário 2
+	usuario3.fazerAniversario() // chama o método fazerAniversario do usuário 3
 }
