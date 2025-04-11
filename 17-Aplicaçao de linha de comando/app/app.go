@@ -20,7 +20,7 @@ func Gerar() *cli.App {
 			Usage: "Busca o IP de um servidor na internet", // descrição do comando
 			Flags: []cli.Flag{ // flags do comando
 				cli.StringFlag{
-					Name:  "servidor",          // nome da flag
+					Name:  "host",              // nome da flag
 					Value: "frigo-data.com.br", // valor padrão da flag
 				},
 			},
