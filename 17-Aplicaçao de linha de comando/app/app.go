@@ -1,6 +1,12 @@
 package app
 
-import "github.com/urfave/cli"
+import (
+	"fmt"
+	"log"
+	"net"
+
+	"github.com/urfave/cli"
+)
 
 // Gerar vai retornar uma aplicação de linha de comando pronta para ser executada
 func Gerar() *cli.App {
@@ -10,12 +16,12 @@ func Gerar() *cli.App {
 
 	app.Commands = []cli.Command{ // comandos da aplicação
 		{
-			Name:  "ip", // nome do comando
+			Name:  "ip",                                    // nome do comando
 			Usage: "Busca o IP de um servidor na internet", // descrição do comando
 			Flags: []cli.Flag{ // flags do comando
 				cli.StringFlag{
-					Name:  "servidor", // nome da flag
-					Value: "frigo-data.com.br", // valor padrão da flag				  
+					Name:  "servidor",          // nome da flag
+					Value: "frigo-data.com.br", // valor padrão da flag
 				},
 			},
 			Action: buscarIps, // ação do comando
@@ -25,10 +31,15 @@ func Gerar() *cli.App {
 	return app // retorna a aplicação de linha de comando
 }
 
-func buscarIps(c *cli.Context) { 	
+func buscarIps(c *cli.Context) {
 	host := c.String("host") // pega o valor da flag servidor
 
 	ips, erro := net.LookupIP(host) // busca o IP do servidor na internet
-	if erro != nil { // se houver erro, imprime o erro
+	if erro != nil {                // se houver erro, imprime o erro
 		log.Fatal(erro) // registra o erro e encerra a aplicação
+	}
+
+	for _, ip := range ips { // para cada IP encontrado
+		fmt.Println(ip) // imprime o IP
+	}
 }
