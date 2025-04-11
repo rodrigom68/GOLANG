@@ -20,10 +20,15 @@ func Gerar() *cli.App {
 			},
 			Action: buscarIps, // ação do comando
 		},
+	}
 
 	return app // retorna a aplicação de linha de comando
 }
 
 func buscarIps(c *cli.Context) { 	
-		
+	host := c.String("host") // pega o valor da flag servidor
+
+	ips, erro := net.LookupIP(host) // busca o IP do servidor na internet
+	if erro != nil { // se houver erro, imprime o erro
+		log.Fatal(erro) // registra o erro e encerra a aplicação
 }
