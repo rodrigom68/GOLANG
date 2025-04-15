@@ -11,7 +11,6 @@ func main() {
 }
 
 func escrever(texto string) {
-
 	for {
 		fmt.Println(texto)
 		time.Sleep(time.Second)
