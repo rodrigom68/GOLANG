@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	escrever("Olá Mundo")
+	go escrever("Olá Mundo") // Goroutine
 	escrever("Programando em Go")
 }
 
