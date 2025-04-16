@@ -11,8 +11,11 @@ func main() {
 
 	fmt.Println("Depois da funçao escrever começar a ser executada") // Imprime mensagem antes de receber do canal
 
-	mensagem := <-canal   // Recebe a mensagem do canal
-	fmt.Println(mensagem) // Imprime a mensagem recebida
+	for {
+		mensagem := <-canal   // Recebe a mensagem do canal
+		fmt.Println(mensagem) // Imprime a mensagem recebida
+	}
+
 }
 
 func escrever(texto string, canal chan string) {
