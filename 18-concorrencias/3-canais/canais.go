@@ -11,11 +11,15 @@ func main() {
 
 	fmt.Println("Depois da funçao escrever começar a ser executada") // Imprime mensagem antes de receber do canal
 
-	for {
-		mensagem, aberto := <-canal // Recebe a mensagem do canal
-		if !aberto {                // Verifica se o canal está aberto
-			break
-		}
+	// for {
+	// 	mensagem, aberto := <-canal // Recebe a mensagem do canal
+	// 	if !aberto {                // Verifica se o canal está aberto
+	// 		break
+	// 	}
+	// 	fmt.Println(mensagem) // Imprime a mensagem recebida
+	// }
+
+	for mensagem := range canal { // Recebe mensagens do canal até que ele seja fechado
 		fmt.Println(mensagem) // Imprime a mensagem recebida
 	}
 
