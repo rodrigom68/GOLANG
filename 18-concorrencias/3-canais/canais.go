@@ -15,7 +15,7 @@ func main() {
 
 func escrever(texto string, canal chan string) {
 	for i := 0; i < 5; i++ {
-		fmt.Println(texto)
+		canal <- texto // Envia a mensagem para o canal
 		time.Sleep(time.Second)
 	}
 }
