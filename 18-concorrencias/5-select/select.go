@@ -19,7 +19,7 @@ func main() {
 
 		for {
 			time.Sleep(2 * time.Second) // Espera 2 segundos antes de enviar a mensagem
-			canal2 <- "Canal 1"         // Envia a mensagem para o canal 1
+			canal2 <- "Canal 2"         // Envia a mensagem para o canal 1
 
 		}
 
