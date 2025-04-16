@@ -32,6 +32,7 @@ func main() {
 			println(mensagemCanal1) // Imprime a mensagem recebida do canal 1
 		case mensagemCanal2 := <-canal2: // Recebe a mensagem do canal 2
 			println(mensagemCanal2) // Imprime a mensagem recebida do canal 1
+
 			// 	mensagemCanal1 := <-canal1 // Recebe a mensagem do canal 1
 			// 	println(mensagemCanal1)    // Imprime a mensagem recebida do canal 1
 
