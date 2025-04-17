@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"time"
 )
 
@@ -36,8 +37,8 @@ func escrever(texto string) <-chan string {
 
 	go func() {
 		for {
-			canal <- fmt.Sprintf("Valor recebido: %s", texto) // Envia a mensagem para o canal
-			time.Sleep(time.Millisecond * 500)                // Espera milisegundo antes de enviar a próxima mensagem
+			canal <- fmt.Sprintf("Valor recebido: %s", texto)             // Envia a mensagem para o canal
+			time.Sleep(time.Millisecond * time.Duration(rand.Intn(2000))) // Espera milisegundo antes de enviar a próxima mensagem
 		}
 	}()
 
