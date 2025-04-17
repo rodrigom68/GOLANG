@@ -23,7 +23,7 @@ func multiplexar(canalDeEntrada1, canalDeEntrada2 <-chan string) <-chan string {
 			case mensagem := <-canalDeEntrada1:
 				canalDesaida <- mensagem // Envia a mensagem do canal1 para o canal multiplexado
 			case mensagem := <-canalDeEntrada2:
-				canalMultcanalDesaidaiplexado <- mensagem // Envia a mensagem do canal2 para o canal multiplexado
+				canalDesaida <- mensagem // Envia a mensagem do canal2 para o canal multiplexado
 			}
 		}
 	}()
