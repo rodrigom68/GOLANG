@@ -15,6 +15,17 @@
        </marquee>
 
        <h4>Este e seu email:   {{.Email}}</h4>
+
+       <button id="botao">Clique em mim!</button>
+
+       <script>
+            
+            var botao = document.getElementById("botao");
+            botao.onclick =  function() {
+                alert("Você clicou no botão!");
+            };
+
+       </script>
     </h2>
     
 </body>
