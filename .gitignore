@@ -1,0 +1,37 @@
+# Binários compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Diretórios comuns gerados por builds e IDEs
+bin/
+obj/
+vendor/
+*.mod
+*.sum
+
+# Go cache
+go.sum
+go.mod
+*.cache
+*.tmp
+
+# Logs e arquivos temporários
+*.log
+*.lock
+*.tmp
+
+# Diretórios de IDEs
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Testes locais
+coverage.out
