@@ -23,5 +23,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err) // Se houve erro, imprime o erro
 	} // Se não houve erro, imprime a mensagem de sucesso
-	fmt.Println("Conexão com o banco de dados estabelecida com sucesso!") // Imprime a mensagem de sucesso
+	fmt.Println("Conexão com o banco de dados estabelecida com sucesso!", db) // Imprime a mensagem de sucesso
 }
